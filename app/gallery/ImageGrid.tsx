@@ -16,7 +16,7 @@ const Gallery: React.FC<GalleryProps> = ({ images }) => {
   return (
     <div className="grid grid-cols-1 gap-8 pt-4 sm:grid-cols-2">
       {images.map((image, index) => (
-        <div className="borderBW space-y-4 rounded-md px-5 py-6  ">
+        <div className="borderBW space-y-4 rounded-md px-5 py-6 " key={index}>
           <>
             <Image
               className="aspect-square h-auto max-h-[300px] w-full rounded-md object-cover object-center opacity-95 hover:opacity-100 hover:shadow-xl"
